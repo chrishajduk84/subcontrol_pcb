@@ -1,0 +1,103 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 625D9396
+P 4600 2700
+AR Path="/625D9396" Ref="Q?"  Part="1" 
+AR Path="/5FDDC46B/625D86E4/625D9396" Ref="Q13"  Part="1" 
+AR Path="/5FDDC46B/625E3B00/625D9396" Ref="Q14"  Part="1" 
+AR Path="/5FDDC46B/625E452B/625D9396" Ref="Q15"  Part="1" 
+AR Path="/5FDDC46B/625E4E0D/625D9396" Ref="Q16"  Part="1" 
+AR Path="/5FDDC46B/625E859A/625D9396" Ref="Q17"  Part="1" 
+AR Path="/5FDDC46B/625E8E1A/625D9396" Ref="Q18"  Part="1" 
+AR Path="/5FDDC46B/625E9ADD/625D9396" Ref="Q19"  Part="1" 
+F 0 "Q18" V 4849 2700 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 4940 2700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4800 2800 50  0001 C CNN
+F 3 "~" H 4600 2700 50  0001 C CNN
+	1    4600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 625D939C
+P 4350 2550
+AR Path="/625D939C" Ref="R?"  Part="1" 
+AR Path="/5FDDC46B/625D939C" Ref="R?"  Part="1" 
+AR Path="/5FDDC46B/625D86E4/625D939C" Ref="R41"  Part="1" 
+AR Path="/5FDDC46B/625E3B00/625D939C" Ref="R43"  Part="1" 
+AR Path="/5FDDC46B/625E452B/625D939C" Ref="R45"  Part="1" 
+AR Path="/5FDDC46B/625E4E0D/625D939C" Ref="R47"  Part="1" 
+AR Path="/5FDDC46B/625E859A/625D939C" Ref="R49"  Part="1" 
+AR Path="/5FDDC46B/625E8E1A/625D939C" Ref="R51"  Part="1" 
+AR Path="/5FDDC46B/625E9ADD/625D939C" Ref="R53"  Part="1" 
+F 0 "R51" H 4420 2596 50  0000 L CNN
+F 1 "2.2K" H 4420 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4280 2550 50  0001 C CNN
+F 3 "~" H 4350 2550 50  0001 C CNN
+	1    4350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 625D93A2
+P 4900 2550
+AR Path="/625D93A2" Ref="R?"  Part="1" 
+AR Path="/5FDDC46B/625D93A2" Ref="R?"  Part="1" 
+AR Path="/5FDDC46B/625D86E4/625D93A2" Ref="R42"  Part="1" 
+AR Path="/5FDDC46B/625E3B00/625D93A2" Ref="R44"  Part="1" 
+AR Path="/5FDDC46B/625E452B/625D93A2" Ref="R46"  Part="1" 
+AR Path="/5FDDC46B/625E4E0D/625D93A2" Ref="R48"  Part="1" 
+AR Path="/5FDDC46B/625E859A/625D93A2" Ref="R50"  Part="1" 
+AR Path="/5FDDC46B/625E8E1A/625D93A2" Ref="R52"  Part="1" 
+AR Path="/5FDDC46B/625E9ADD/625D93A2" Ref="R54"  Part="1" 
+F 0 "R52" H 4970 2596 50  0000 L CNN
+F 1 "2.2K" H 4970 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4830 2550 50  0001 C CNN
+F 3 "~" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2800 4350 2800
+Wire Wire Line
+	4350 2700 4350 2800
+Connection ~ 4350 2800
+Wire Wire Line
+	4350 2800 4400 2800
+Wire Wire Line
+	4800 2800 4900 2800
+Wire Wire Line
+	4900 2700 4900 2800
+Wire Wire Line
+	4350 2300 4350 2350
+Wire Wire Line
+	4350 2350 4600 2350
+Wire Wire Line
+	4600 2350 4600 2500
+Connection ~ 4350 2350
+Wire Wire Line
+	4350 2350 4350 2400
+Text HLabel 4900 2400 1    50   Input ~ 0
+Voltage1
+Text HLabel 4900 2800 2    50   Input ~ 0
+Signal1
+Text HLabel 4350 2300 1    50   Input ~ 0
+Voltage2
+Text HLabel 4250 2800 0    50   Input ~ 0
+Signal2
+$EndSCHEMATC

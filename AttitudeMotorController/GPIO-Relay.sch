@@ -1,0 +1,139 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0160
+U 1 1 5FD1A3EC
+P 4650 3100
+AR Path="/609F3C23/5FD1A3EC" Ref="#PWR0160"  Part="1" 
+AR Path="/609F48F0/5FD1A3EC" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 4650 2950 50  0001 C CNN
+F 1 "+5V" H 4665 3273 50  0000 C CNN
+F 2 "" H 4650 3100 50  0001 C CNN
+F 3 "" H 4650 3100 50  0001 C CNN
+	1    4650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q7
+U 1 1 5FD1A3F2
+P 4550 3700
+AR Path="/609F3C23/5FD1A3F2" Ref="Q7"  Part="1" 
+AR Path="/609F48F0/5FD1A3F2" Ref="Q8"  Part="1" 
+F 0 "Q8" H 4754 3746 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 4754 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4750 3800 50  0001 C CNN
+F 3 "~" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5FD1A3F8
+P 4650 3250
+AR Path="/609F3C23/5FD1A3F8" Ref="R16"  Part="1" 
+AR Path="/609F48F0/5FD1A3F8" Ref="R18"  Part="1" 
+F 0 "R18" V 4650 3250 50  0000 C CNN
+F 1 "10K" V 4750 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4580 3250 50  0001 C CNN
+F 3 "~" H 4650 3250 50  0001 C CNN
+	1    4650 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5FD1A3FE
+P 4250 3850
+AR Path="/609F3C23/5FD1A3FE" Ref="R15"  Part="1" 
+AR Path="/609F48F0/5FD1A3FE" Ref="R17"  Part="1" 
+F 0 "R17" V 4250 3850 50  0000 C CNN
+F 1 "10K" V 4350 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4180 3850 50  0001 C CNN
+F 3 "~" H 4250 3850 50  0001 C CNN
+	1    4250 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0161
+U 1 1 5FD1A404
+P 4650 3900
+AR Path="/609F3C23/5FD1A404" Ref="#PWR0161"  Part="1" 
+AR Path="/609F48F0/5FD1A404" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 4650 3650 50  0001 C CNN
+F 1 "GND" V 4655 3772 50  0000 R CNN
+F 2 "" H 4650 3900 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 5FD1A40A
+P 4250 4000
+AR Path="/609F3C23/5FD1A40A" Ref="#PWR0162"  Part="1" 
+AR Path="/609F48F0/5FD1A40A" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 4250 3750 50  0001 C CNN
+F 1 "GND" V 4255 3872 50  0000 R CNN
+F 2 "" H 4250 4000 50  0001 C CNN
+F 3 "" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3700 4250 3700
+Wire Wire Line
+	4650 3400 4650 3450
+Wire Wire Line
+	4650 3450 5150 3450
+Connection ~ 4650 3450
+Wire Wire Line
+	4650 3450 4650 3500
+Text HLabel 5750 3050 2    50   Input ~ 0
+SWITCH_VOLTAGE
+Text HLabel 5150 2950 0    50   Input ~ 0
+OUTPUT
+Text HLabel 4000 3700 0    50   Input ~ 0
+GPIO_IN
+Wire Wire Line
+	4000 3700 4250 3700
+Connection ~ 4250 3700
+$Comp
+L power:+5V #PWR0163
+U 1 1 5FD1A411
+P 5750 3450
+AR Path="/609F3C23/5FD1A411" Ref="#PWR0163"  Part="1" 
+AR Path="/609F48F0/5FD1A411" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 5750 3300 50  0001 C CNN
+F 1 "+5V" V 5765 3578 50  0000 L CNN
+F 2 "" H 5750 3450 50  0001 C CNN
+F 3 "" H 5750 3450 50  0001 C CNN
+	1    5750 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:G5LE-1 K1
+U 1 1 6098ABB1
+P 5450 3250
+AR Path="/609F3C23/6098ABB1" Ref="K1"  Part="1" 
+AR Path="/609F48F0/6098ABB1" Ref="K2"  Part="1" 
+F 0 "K2" V 6017 3250 50  0000 C CNN
+F 1 "G5LE-1" V 5926 3250 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 5900 3200 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5450 3250 50  0001 C CNN
+	1    5450 3250
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5750 3350
+$EndSCHEMATC

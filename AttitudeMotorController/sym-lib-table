@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AttitudeMotorController-rescue")(type "Legacy")(uri "${KIPRJMOD}/AttitudeMotorController-rescue.lib")(options "")(descr ""))
+  (lib (name "attitude_controller")(type "KiCad")(uri "${KIPRJMOD}/libraries/attitude_controller.kicad_sym")(options "")(descr ""))
+)

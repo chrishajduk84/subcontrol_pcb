@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name WurthCrystal)(type KiCad)(uri "C:/Users/Chris Hajduk/Desktop/Underwater Submarine/PCB/Attitude and Motor Controller/PCB Symbols and Footprint Libraries/Wurth 830011301.pretty")(options "")(descr ""))
+  (lib (name AOZ2238QI)(type KiCad)(uri "C:/Users/Chris Hajduk/Desktop/Underwater Submarine/PCB/Attitude and Motor Controller/PCB Symbols and Footprint Libraries/AOZ2238QI-01.pretty")(options "")(descr ""))
+)
